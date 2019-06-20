@@ -9,37 +9,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView textView1,textView2;
+public class MActivity extends AppCompatActivity implements View.OnClickListener {
+
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView1 = findViewById(R.id.et_username);
-        textView2 = findViewById(R.id.et_password);
-        button = findViewById(R.id.btn_login);
+        setContentView(R.layout.activity_m);
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         // 动态修改toolbar属性
         toolbar.setTitle("点餐系统");
         setSupportActionBar(toolbar);
         // 显示左箭头
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        button = findViewById(R.id.add_btn);
         button.setOnClickListener(this);
-        }
+    }
     @Override
     public void onClick(View v) {
-        if (textView1.getText().toString().trim().equals("admin") && textView2.getText().toString().trim().equals("root")) {
-            Intent intent = new Intent(this, MActivity.class);
+            Intent intent = new Intent(this, SecActivity.class);
             startActivity(intent);
-        } else {
-            Toast t = Toast.makeText(MainActivity.this, "账号或密码错误", Toast.LENGTH_LONG);
-            t.show();
-        }
     }
     /**
      * 重写，加载menu布局

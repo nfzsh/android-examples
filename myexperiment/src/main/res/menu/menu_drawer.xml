@@ -5,32 +5,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@android:drawable/ic_menu_camera"
-            android:title="camera" />
+            android:title="今日推荐" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@android:drawable/ic_menu_gallery"
-            android:title="gallery" />
+            android:title="特色菜品" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="slideshow" />
+            android:title="酒水饮料" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="manage" />
+            android:title="甜点" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="工作人员">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@android:drawable/ic_menu_share"
-                android:title="share" />
+                android:title="餐桌查看" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@android:drawable/ic_menu_send"
-                android:title="send" />
+                android:title="结算" />
         </menu>
     </item>
 

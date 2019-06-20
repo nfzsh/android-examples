@@ -2,6 +2,7 @@ package com.example.myexperiment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,6 +21,7 @@ import com.example.myexperiment.adapter.SecAdapter;
 import com.example.myexperiment.database.MyDatabase;
 import com.example.myexperiment.entity.Data;
 import com.example.myexperiment.entity.Food;
+import com.google.android.material.navigation.NavigationView;
 
 import java.io.Serializable;
 import java.util.List;
@@ -28,6 +30,8 @@ import java.util.ArrayList;
 public class SecActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView1;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private SecAdapter adapter1;
     private float p = 0.00f;
     private TextView price;
@@ -39,9 +43,13 @@ public class SecActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sec);
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+
         recyclerView1 = findViewById(R.id.act_sec_recyclerview_zhaopai);
         price = findViewById(R.id.act_sec_price);
         Toolbar toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
         // 动态修改toolbar属性
         toolbar.setTitle("点餐系统");
         setSupportActionBar(toolbar);

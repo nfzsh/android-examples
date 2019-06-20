@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:showIn="@layout/appbar2">
+    <EditText
+        android:id="@+id/act_sec_zhaopai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="招牌菜" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/act_sec_recyclerview_zhaopai"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/act_sec_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总价：0.0"
+                android:textColor="#FF0000"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/act_sec_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款"
+                android:textSize="24sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

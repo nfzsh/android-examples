@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
+    <include layout="@layout/appbar"></include>
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -91,6 +92,5 @@
             android:text="设置"
             />
     </RelativeLayout>
-    <include layout="@layout/appbar"></include>
 
 </RelativeLayout>
