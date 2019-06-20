@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        toolbar = findViewById(R.id.my_toolbar);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-        setSupportActionBar(toolbar);
-        // 显示左箭头
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            toolbar = findViewById(R.id.my_toolbar);
+            drawerLayout = findViewById(R.id.drawer_layout);
+            navigationView = findViewById(R.id.nav_view);
+            setSupportActionBar(toolbar);
+            // 显示左箭头
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         navigationView.setNavigationItemSelectedListener(this);
     }

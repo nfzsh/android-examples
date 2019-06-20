@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="courses">
+        <item>Android开发</item>
+        <item>数据结构</item>
+        <item>算法设计</item>
+        <item>高等数学</item>
+    </string-array>
+</resources>

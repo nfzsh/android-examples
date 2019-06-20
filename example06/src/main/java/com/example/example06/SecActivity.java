@@ -24,6 +24,7 @@ public class SecActivity extends AppCompatActivity {
     private Button button;
     private RecyclerView recyclerView;
     private SecAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
