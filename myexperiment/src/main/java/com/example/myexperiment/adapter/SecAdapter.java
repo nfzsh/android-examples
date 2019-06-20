@@ -1,5 +1,6 @@
 package com.example.myexperiment.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myexperiment.FoodActivity;
+import com.example.myexperiment.MainActivity;
 import com.example.myexperiment.R;
 import com.example.myexperiment.SecActivity;
 import com.example.myexperiment.entity.Food;
@@ -54,7 +57,8 @@ public class SecAdapter extends RecyclerView.Adapter<SecAdapter.ViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, food.get(position).title, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, FoodActivity.class);
+                context.startActivity(intent);
             }
         });
         holder.button.setOnClickListener(new View.OnClickListener() {

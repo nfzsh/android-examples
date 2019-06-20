@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodActivity">
+
+    <include layout="@layout/appbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yxrs"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="鱼香肉丝（Yuxiang shredded pork(sauteed in spicy garlic sauce），是一道汉族特色传统名菜，以鱼香味调味而得名，属于川菜。相传灵感来自泡椒肉丝，民国年间则是由四川籍厨师创制而成。
+鱼香肉丝是一道常见川菜。鱼香，是四川菜肴主要传统味型之一。成菜具有鱼香味，其味是调味品调制而成。此法源出于四川民间独具特色的烹鱼调味方法，而今已广泛用于川味的熟菜中。
+2018年9月10日，备受关注的“中国菜”在河南省正式发布，鱼香肉丝上榜。"/>
+</LinearLayout>
